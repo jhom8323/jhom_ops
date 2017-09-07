@@ -1,0 +1,1 @@
+for i in {143,710,745,759,763,764,765,766,767,768,769};do ssh  Servername-$i 'uptime'; done
