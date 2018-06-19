@@ -1,0 +1,1 @@
+cat jhtest.list | sed 's/,/\'$'\n/g'
