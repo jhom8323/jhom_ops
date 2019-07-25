@@ -1,0 +1,19 @@
+Create a temporary file, and use the find command to find newer files than that file.
+Create an empty file:
+ $ touch newer_than_this_file    
+Look for files on the whole machine ("/"), which are newer ("-newer") than the file you just created ("newer_than_this_file"). Do not look for files in /proc/ ("-not -path "/proc/*""). Run the ls -lh command on the files found:
+$ find / -newer newer_than_this_file -not -path "/proc/*" -exec ls -lh {} \;
+We can also specify a certain size if we are looking for a minimum size (1M or greater in this example):
+$ find / -newer newer_than_this_file -size +1M -not -path "/proc/*" -exec ls -lh {} \;
+Specific files
+Create a temporary file, and use the find command to find newer files than that file.
+
+Create an empty file:
+
+ $ touch newer_than_this_file    
+Look for files on the whole machine ("/"), which are newer ("-newer") than the file you just created ("newer_than_this_file"). Do not look for files in /proc/ ("-not -path "/proc/*""). Run the ls -lh command on the files found:
+
+$ find / -newer newer_than_this_file -not -path "/proc/*" -exec ls -lh {} \;
+We can also specify a certain size if we are looking for a minimum size (1M or greater in this example):
+
+$ find / -newer newer_than_this_file -size +1M -not -path "/proc/*" -exec ls -lh {} \;
