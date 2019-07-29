@@ -32,8 +32,21 @@ insert into FishProcessing Values (30, 2015, "Bluefin", 1, 40);
 insert into FishProcessing Values (31, 2015, "Yellowfin", 2, 55);
 insert into FishProcessing Values (32, 2015, "Yellowfin", 1, 19);
 insert into FishProcessing Values (33, 2015, "Bass", 1, 4);
+insert into FishProcessing Values (34, 2018, "Yellowfin", 1, 29);
+insert into FishProcessing Values (35, 2018, "Yellowfin", 1, 40);
+insert into FishProcessing Values (36, 2018, "Yellowfin", 2, 62);
+insert into FishProcessing Values (37, 2016, "Yellowfin", 1, 69);
+insert into FishProcessing Values (38, 2016, "Yellowtail", 4, 69);
+insert into FishProcessing Values (39, 2016, "Yellowtail", 3, 44);
+insert into FishProcessing Values (40, 2016, "Yellowtail", 1, 13);
+insert into FishProcessing Values (41, 2016, "Yellowtail", 1, 15);
+
+
 SELECT * FROM FishProcessing order by Year;
+
+
+
 select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2014 and Species="Yellowtail";
 select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2014 and Species="Sheepshead";
 select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2014 and Species="Yellowtail";
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2015 ;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2016;
