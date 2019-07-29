@@ -13,3 +13,15 @@ SELECT * FROM LongRangeStuff order by class;
 Select reel, style,class,backing from LongRangeStuff order by class;
 select rod, length from LongRangeStuff order by class;
 Select id,reel, rod,style,class,backing from LongRangeStuff order by class;
+
+Create Table FishProcessing (id INTEGER primary key, Year numeric, Species TEXT, FishCount numeric, Weight numeric );
+insert into FishProcessing Values (1, 2017, "Yellowtail", 4, 70);
+insert into FishProcessing Values (2, 2017, "Yellowtail", 2, 43);
+insert into FishProcessing Values (3, 2017, "Yellowtail", 1, 24);
+insert into FishProcessing Values (4, 2017, "Yellowtail", 2, 39);
+insert into FishProcessing Values (5, 2017, "Yellowtail", 2, 51);
+insert into FishProcessing Values (6, 2017, "Yellowtail", 1, 24);
+insert into FishProcessing Values (7, 2017, "Yellowtail", 1, 18);
+insert into FishProcessing Values (8, 2017, "Yellowtail", 3, 61);
+SELECT * FROM FishProcessing order by Year;
+select Species, Weight from FishProcessing where Year=2017;
