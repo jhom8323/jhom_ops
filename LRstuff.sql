@@ -46,7 +46,8 @@ SELECT * FROM FishProcessing order by Year;
 
 
 
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2014 and Species="Yellowtail";
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2014 and Species="Sheepshead";
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2014 and Species="Yellowtail";
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2016;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2014 ;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2015 ;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2016 ;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2017;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2018;
