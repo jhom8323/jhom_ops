@@ -23,5 +23,7 @@ insert into FishProcessing Values (5, 2017, "Yellowtail", 2, 51);
 insert into FishProcessing Values (6, 2017, "Yellowtail", 1, 24);
 insert into FishProcessing Values (7, 2017, "Yellowtail", 1, 18);
 insert into FishProcessing Values (8, 2017, "Yellowtail", 3, 61);
+insert into FishProcessing Values (9, 2017, "Grouper", 2, 23);
 SELECT * FROM FishProcessing order by Year;
-select Species, Weight from FishProcessing where Year=2017;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2017 and Species="Yellowtail";
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2017 and Species="Grouper";
