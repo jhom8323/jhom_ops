@@ -40,14 +40,29 @@ insert into FishProcessing Values (38, 2016, "Yellowtail", 4, 69);
 insert into FishProcessing Values (39, 2016, "Yellowtail", 3, 44);
 insert into FishProcessing Values (40, 2016, "Yellowtail", 1, 13);
 insert into FishProcessing Values (41, 2016, "Yellowtail", 1, 15);
-
+insert into FishProcessing Values (42, 2012, "Yellowfin", 2, 26);
+insert into FishProcessing Values (43, 2012, "Yellowtail", 8, 179);
+insert into FishProcessing Values (44, 2012, "Bluefin", 2, 30);
+insert into FishProcessing Values (45, 2012, "Dorado", 2, 16);
+insert into FishProcessing Values (46, 2012, "Grouper", 2, 34);
+insert into FishProcessing Values (47, 2013, "Bluefin", 1, 18);
+insert into FishProcessing Values (48, 2013, "Dorado", 2, 27);
+insert into FishProcessing Values (49, 2013, "Yellowfin", 2, 54);
+insert into FishProcessing Values (50, 2013, "Yellowfin", 2, 56);
+insert into FishProcessing Values (51, 2013, "Yellowfin", 4, 98);
+insert into FishProcessing Values (52, 2013, "Yellowfin", 1, 27);
+insert into FishProcessing Values (53, 2013, "Yellowtail", 4, 80);
+insert into FishProcessing Values (54, 2013, "Yellowtail", 1, 42);
+insert into FishProcessing Values (55, 2013, "Yellowtail", 5, 116);
+insert into FishProcessing Values (56, 2013, "Yellowtail", 3, 51);
 
 SELECT * FROM FishProcessing order by Year;
 
 
-
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2014 ;
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2015 ;
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2016 ;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2012;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2013;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2014;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2015;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2016;
 select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2017;
 select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2018;
