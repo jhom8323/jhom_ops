@@ -55,14 +55,21 @@ insert into FishProcessing Values (53, 2013, "Yellowtail", 4, 80);
 insert into FishProcessing Values (54, 2013, "Yellowtail", 1, 42);
 insert into FishProcessing Values (55, 2013, "Yellowtail", 5, 116);
 insert into FishProcessing Values (56, 2013, "Yellowtail", 3, 51);
-
+insert into FishProcessing Values (57, 2019, "Yellowtail", 5, 78);
+insert into FishProcessing Values (58, 2019, "Yellowtail", 3, 38);
+insert into FishProcessing Values (59, 2019, "Yellowtail", 1, 24);
+insert into FishProcessing Values (60, 2019, "Yellowfin", 4, 58);
+insert into FishProcessing Values (61, 2019, "Yellowfin", 2, 17);
+insert into FishProcessing Values (62, 2019, "Dorado", 1, 13);
+insert into FishProcessing Values (63, 2019, "Wahoo", 1, 15);
 SELECT * FROM FishProcessing order by Year;
 
 
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2012;
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2013;
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2014;
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2015;
-select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2016;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2012 ;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2013 ;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2014 ;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2015 ;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2016 ;
 select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2017;
 select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2018;
+select Year, Species, sum (FishCount), sum (Weight) from FishProcessing where Year=2019;
