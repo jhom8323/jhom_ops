@@ -23,7 +23,7 @@ insert into ReelStuff Values (5,"Avet 30/2", "EX302R-11391",80,100,"Livebait","t
 insert into ReelStuff Values (6,"Avet 30w/2", "EXW302R-13638",100,130,"Livebait","tuna");
 insert into ReelStuff Values (7,"Avet Lx", "LX4.6R-15286",30,50,"Livebait","tuna");
 insert into ReelStuff Values (8,"Avet Jx6/3", "JX6.3R-19443",40,65,"Livebait","tuna");
-insert into ReelStuff Values (9,"Avet Jx6/3", "JX6.3R-15251",40,65,"Livebait","tuna");
+insert into ReelStuff Values (9,"Avet Jx6/3", "JX6.3R-15251",30,40,"Livebait","tuna");
 insert into ReelStuff Values (10,"Avet HXJ5/2 RAPTOR", "HJX5/2-MCR-01763",50,65,"Livebait","tuna");
 insert into ReelStuff Values (11,"ACCURATE BX2-500", "07035",40,60,"Livebait","tuna");
 insert into ReelStuff Values (12,"ACCURATE BX2-500", "11623",40,60,"Livebait","tuna");
